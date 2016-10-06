@@ -1,0 +1,7 @@
+#!/usr/bin/with-contenv bash
+
+umask 0002
+
+echo "Starting Subsonic"
+exec s6-setuidgid bytesized /app/subsonic.sh
+echo "Subsonic shut down"

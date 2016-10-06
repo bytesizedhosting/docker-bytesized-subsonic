@@ -6,6 +6,6 @@ RUN wget -qO- http://prdownloads.sourceforge.net/subsonic/subsonic-6.0-standalon
 
 COPY /static /
 
-VOLUME /data /config
+VOLUME /data /config /media
 
 EXPOSE 4040
